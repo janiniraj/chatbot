@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  mysql:
+      image: mysql:5.7.22
+      container_name: TinaChatbot
+      ports:
+        - 3312:3306
+      volumes:
+        - ~/ProjectOps/Database/ChatbotDB:/var/lib/mysql
+      environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: chatbot_db
+        MYSQL_USER: adminbot
+        MYSQL_PASSWORD: adminbot!@#

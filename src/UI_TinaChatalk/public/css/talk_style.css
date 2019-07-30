@@ -1,0 +1,111 @@
+/*MIC*/
+.mic-container {
+    width: 100%;
+    text-align: center;
+}
+
+#mic_button {
+    z-index: 0;
+    transition: visibility 0s;
+}
+
+.fa-microphone{
+    color: #FFFFFF;
+    background: #dd4b39;
+    padding: 0.3em 0.5em;
+}
+.circle{
+    border-radius: 60%;
+    font-size: 3em;
+}
+.cmn-t-pulse {
+    animation: pulse 1s ease infinite;
+    /* transition: transform 0.2s; */
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*LOADING*/
+#mic_loading {
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: -1;
+    transition: visibility 0s;
+}
+#mic_loading div {
+    height: 20px;
+    width: 5px;
+    background: #FE4A49;
+    margin: 4px;
+    border-radius: 25px;
+}
+#mic_loading div:nth-child(1) {
+    animation: mic_loading 1s ease-in-out infinite 0s; }
+#mic_loading div:nth-child(2) {
+    animation: mic_loading 1s ease-in-out infinite 0.1s; }
+#mic_loading div:nth-child(3) {
+    animation: mic_loading 1s ease-in-out infinite 0.2s; }
+#mic_loading div:nth-child(4) {
+    animation: mic_loading 1s ease-in-out infinite 0.3s; }
+#mic_loading div:nth-child(5) {
+    animation: mic_loading 1s ease-in-out infinite 0.4s; }
+#mic_loading div:nth-child(6) {
+    animation: mic_loading 1s ease-in-out infinite 0.5s; }
+#mic_loading div:nth-child(7) {
+    animation: mic_loading 1s ease-in-out infinite 0.6s; }
+
+@keyframes mic_loading {
+    0% {
+        transform: scaleY(1);
+        background: #FED766; }
+    25% {
+        background: #009FB7; }
+    50% {
+        transform: scaleY(2);
+        background: #59CD90; }
+    75% {
+        background: #FE4A49; }
+    100% {
+        transform: scaleY(1);
+        background: #D91E36; }
+}
+@keyframes rotateAnimation {
+    0%   {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes wk-rotateAnimation {
+    0%   {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+
+/*.hide-mic {*/
+    /*visibility: hidden;*/
+    /*-webkit-transition: visibility 0s linear 0.33s, opacity 0.33s linear;*/
+    /*transition: visibility 0s linear 0.33s, opacity 0.33s linear;*/
+    /*opacity: 0;*/
+    /*z-index: -1;*/
+/*}*/
+
+/*.show-mic {*/
+    /*visibility: visible !important;*/
+    /*transition-delay: 0s !important;*/
+    /*opacity: 1 !important;*/
+/*}*/

@@ -1,0 +1,15 @@
+{
+  "name": "Tina",
+  "description": "Tina AI ChatBot",
+  "keywords": ["ai", "api.ai", "bot", "w3c", "tina"],
+  "env": {
+    "APIAI_TOKEN": {
+      "description": "Tina access token",
+      "value": ""
+    },
+    "APIAI_SESSION_ID": {
+      "description": "Tina AI",
+      "value": ""
+    }
+  }
+}
